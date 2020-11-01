@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  line-height: 1.7; }
+
+.welcome_note {
+  text-align: center;
+  background-color: #00a4ef; }
+  .welcome_note_heading {
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif; }
+
+.header {
+  font-size: 1.4rem;
+  background-color: #f9f9f9;
+  padding: 2rem 8rem;
+  color: #666666; }
+  @media only screen and (max-width: 37.5em) {
+    .header {
+      font-size: 1rem;
+      padding: 1rem; } }
+  .header_4 {
+    font-weight: bold;
+    font-size: 1.7rem;
+    font-family: "Josefin Sans", sans-serif; }
+    @media only screen and (max-width: 37.5em) {
+      .header_4 {
+        font-size: 1.3rem; } }
+  .header_desc {
+    font-weight: 550; }
+  .header_list {
+    display: flex;
+    justify-content: space-between; }
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8rem;
+  font-size: 1.4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .main {
+      display: inline; } }
+  .main_heading {
+    color: #00a4ef; }
+    @media only screen and (max-width: 37.5em) {
+      .main_heading {
+        display: flex;
+        justify-content: center;
+        padding: 1rem; } }
+    .main_heading-2 {
+      font-size: 2.2rem;
+      font-family: "Josefin Sans", sans-serif; }
+      @media only screen and (max-width: 37.5em) {
+        .main_heading-2 {
+          font-size: 1.8rem; } }
+  .main_address {
+    font-size: 1.2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .main_address {
+        font-size: 1.1rem;
+        display: flex;
+        align-self: center;
+        padding-left: 2rem; } }
+  .main_nav {
+    display: flex;
+    font-size: 1.7rem; }
+    @media only screen and (max-width: 37.5em) {
+      .main_nav {
+        font-size: 1.4rem;
+        justify-content: center; } }
+    .main_nav_item {
+      padding: 1rem;
+      list-style: none; }
+
+.image {
+  padding: 2rem 8rem; }
+  .image_1 {
+    width: 100%; }
+
+.team {
+  font-size: 1.4rem;
+  padding: 5rem 8rem; }
+  @media only screen and (max-width: 37.5em) {
+    .team {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
+  .team_details {
+    padding: 2rem; }
+  .team_heading {
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    color: #666666;
+    font-size: 3rem; }
+  .team_list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    margin-top: 2rem;
+    justify-items: center; }
+    @media only screen and (max-width: 37.5em) {
+      .team_list {
+        display: flex;
+        flex-direction: column; } }
+    .team_list_header_2 {
+      font-size: 2.2rem;
+      color: #00a4ef;
+      font-family: "Josefin Sans", sans-serif; }
+      @media only screen and (max-width: 50em) {
+        .team_list_header_2 {
+          font-size: 1.8rem; } }
+    .team_list_desc {
+      color: #666666;
+      font-size: 1.3rem; }
+      @media only screen and (max-width: 50em) {
+        .team_list_desc {
+          font-size: 1rem; } }
+
+.footer {
+  background-color: #3a3a3a;
+  padding: 3rem; }
+  .footer_list {
+    display: flex;
+    justify-content: space-evenly; }
+  .footer_details {
+    color: #fff; }
+  .footer_nav {
+    display: flex;
+    font-size: 1.7rem;
+    justify-content: space-evenly;
+    padding: 4rem; }
+    .footer_nav_item {
+      padding: 1rem;
+      list-style: none; }
+    .footer_nav_link {
+      color: #fff; }
+
+.copyright {
+  text-align: center;
+  color: #fff;
+  margin-top: 4rem;
+  font-size: 1.4rem; }

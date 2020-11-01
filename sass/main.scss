@@ -1,0 +1,231 @@
+$color-primary: #00a4ef;
+$color-secondary: #f9f9f9;
+$color-white: #fff;
+
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+
+
+//RESPONSIVE BREAK POINTS
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ html{
+     font-size: 62.5%;
+
+     @media only screen and (max-width: $bp-large){
+         font-size: 50%;
+     }
+ }
+
+body{
+    font-family: $font-primary;
+    font-weight: 400;
+    line-height: 1.7;
+  
+}
+
+.welcome_note{
+    text-align: center;
+    background-color: $color-primary;
+    
+    &_heading{
+        color: $color-white;
+        font-family: $font-display;
+    }
+}
+
+.header{
+    font-size: 1.4rem;
+    background-color: $color-secondary;
+    padding: 2rem 8rem;
+    color: #666666;
+    @media only screen and (max-width: $bp-small){
+        font-size: 1rem;
+        padding: 1rem;
+    }
+   
+    &_4{
+        font-weight: bold;
+        font-size: 1.7rem;
+        font-family: $font-display;
+
+        @media only screen and (max-width: $bp-small){
+            font-size: 1.3rem;
+        }
+    }
+
+    &_desc{
+        font-weight: 550;
+    }
+
+    &_list{
+        display: flex;
+        justify-content: space-between;
+    } 
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 8rem;
+    font-size: 1.4rem;
+
+   @media only screen and (max-width: $bp-small){
+        display: inline;
+   }
+    
+    &_heading{
+         color:$color-primary;
+        
+         @media only screen and (max-width: $bp-small){
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+          }
+
+        &-2{
+            font-size: 2.2rem;
+            font-family: $font-display;
+            // background-image: linear-gradient(to right, #a7ddf7, #00a4ef);
+
+            @media only screen and (max-width: $bp-small){
+                font-size: 1.8rem;
+            }
+        }
+    }
+    &_address{
+        font-size: 1.2rem;
+        @media only screen and (max-width: $bp-small){
+            font-size: 1.1rem;
+
+            display: flex;
+            align-self: center;
+            padding-left: 2rem;
+        }
+    }
+
+    &_nav{
+        display: flex;
+        font-size: 1.7rem;
+
+        @media only screen and (max-width: $bp-small){
+            font-size: 1.4rem;
+            justify-content: center;
+        }
+
+        &_item{
+            padding: 1rem;
+            list-style: none;
+        }
+    }
+}
+
+.image{
+    padding: 2rem 8rem;
+
+    &_1{
+        width: 100%;
+        
+    }
+}
+
+.team{
+    font-size: 1.4rem;
+    padding: 5rem 8rem;
+    
+    @media only screen and (max-width: $bp-small){
+        display: flex;
+        flex-direction: column;      
+        align-items: center;
+    }
+
+    &_details{
+        padding: 2rem;
+    }
+
+    &_heading{
+        text-align: center;
+        font-family: $font-display;
+        color: #666666;
+        font-size: 3rem;
+    }
+
+    &_list{
+        // display: flex;
+        // justify-content: space-evenly;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        margin-top: 2rem;
+        justify-items: center;
+
+        @media only screen and (max-width: $bp-small){
+            display: flex;
+            flex-direction: column;      
+        }
+
+    
+        &_header_2{
+            font-size: 2.2rem;
+            color: $color-primary;
+            font-family: $font-display;
+
+            @media only screen and (max-width: $bp-medium){
+                font-size: 1.8rem;
+            }
+        }
+        &_desc{
+            color: #666666;
+            font-size: 1.3rem;
+            
+            @media only screen and (max-width: $bp-medium){
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.footer{
+    background-color: #3a3a3a;
+    padding: 3rem;
+
+    &_list{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &_details{
+        color: $color-white;
+    }
+    &_nav{
+        display: flex;
+        font-size: 1.7rem;
+        justify-content: space-evenly;
+        padding: 4rem;
+        
+
+        &_item{
+            padding: 1rem;
+            list-style: none;
+            
+        }
+        &_link{
+            color: $color-white;
+        }
+    }
+}
+
+.copyright{
+    text-align: center;
+    color: $color-white;
+    margin-top: 4rem;
+    font-size: 1.4rem;
+}
