@@ -56,7 +56,9 @@ body {
   font-size: 1.4rem; }
   @media only screen and (max-width: 37.5em) {
     .main {
-      display: inline; } }
+      display: inline;
+      padding: 2rem 0rem;
+    } }
   .main_heading {
     color: #00a4ef; }
     @media only screen and (max-width: 37.5em) {
