@@ -100,9 +100,11 @@ body {
         font-size: 1.4rem;
         justify-content: center; } }
     .main_nav_link {
-      color: #666666; }
+      color: #666666;
+      text-decoration: none; }
       .main_nav_link:active {
-        color: #00a4ef; }
+        color: #00a4ef;
+        text-decoration: none; }
     .main_nav_item {
       padding: 1rem;
       list-style: none;
