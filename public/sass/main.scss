@@ -290,7 +290,10 @@ body{
 
     grid-gap: 1.5rem;
     padding: 10rem;
-
+    
+    @media only screen and (max-width: $bp-small){
+        padding: 0rem;
+    }
 
 &__item {
     &--1 {
