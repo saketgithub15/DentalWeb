@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass ./public/sass/main.scss ./public/css/style.css -w",
-    "start": "node src/app.js"
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+
   },
   "author": "",
   "license": "ISC",
