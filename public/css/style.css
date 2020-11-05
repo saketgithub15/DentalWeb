@@ -80,6 +80,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .main_heading {
         display: flex;
+        justify-content: center;
         padding: 0.6rem;
         margin-top: 2rem; } }
     .main_heading-2 {
