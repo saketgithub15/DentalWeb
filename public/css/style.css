@@ -136,7 +136,7 @@ body {
     @media only screen and (max-width: 37.5em) {
       .image_slide {
         height: 30rem;
-        width: 100%; } }
+        width: 85%; } }
   @media only screen and (max-width: 37.5em) {
     .image {
       padding: 0; } }
