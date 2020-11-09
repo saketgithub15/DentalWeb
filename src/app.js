@@ -13,6 +13,7 @@ const partialsPath = (path.join(__dirname, "../templates/partials"));
 
 app.set('view engine', 'hbs');
 app.set('views', templatePath);
+
 hbs.registerPartials(partialsPath);
 
 app.use(express.static(staticPath));
@@ -23,7 +24,7 @@ app.get('/', (req, res)=>{
     res.render('index');
 })
 
-app.get('/service', (req, res)=>{
+app.get('/service', (req, res)=>{ 
     res.render('service');
 })
 

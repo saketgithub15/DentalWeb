@@ -365,6 +365,11 @@ body{
 
 
 &__item {
+    transition: .5s all;
+    outline: 5px solid #fff;
+    overflow: none;
+    cursor: pointer;
+
     &--1 {
         grid-row: 1 / span 4;
         grid-column: 1 / span 2;
@@ -394,6 +399,13 @@ body{
         grid-row: 5 / -1;
         grid-column: 3 / span 2;
     }
+
+    &:hover{
+        transform: scale(1.05); 
+        overflow: none;     
+        filter: grayscale(0);
+    }
+
 }
 
 &__img {
