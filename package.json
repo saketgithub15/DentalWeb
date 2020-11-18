@@ -6,15 +6,17 @@
   "scripts": {
     "compile:sass": "node-sass ./public/sass/main.scss ./public/css/style.css -w",
     "start": "node src/app.js",
-    "dev": "nodemon src/app.js"
+    "dev": "env-cmd ./config/dev.env nodemon src/app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "hbs": "^4.1.1"
+    "hbs": "^4.1.1",
+    "mongoose": "^5.10.15"
   },
   "devDependencies": {
+    "env-cmd": "^8.0.2",
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.6"
   }

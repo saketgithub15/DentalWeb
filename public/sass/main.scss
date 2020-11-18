@@ -195,6 +195,7 @@ body{
     &_slide{
         background-image: url('../img/main_img1.jpeg');
         background-size: 100% 100%;
+        // background-attachment: fixed;
         width: 80%;
         height: 70rem;
         animation: slider 10s infinite; 
@@ -206,9 +207,9 @@ body{
         }
         @media only screen and (max-width: $bp-small){
             height: 30rem;
-            width: 85%;
+            width: 83%;
         }
-
+        
         
     }
 
@@ -365,7 +366,7 @@ body{
 
 
 &__item {
-    transition: .5s all;
+    transition: .3s all;
     outline: 5px solid #fff;
     overflow: none;
     cursor: pointer;
@@ -401,8 +402,8 @@ body{
     }
 
     &:hover{
-        transform: scale(1.05); 
-        overflow: none;     
+        transform: scale(1.02); 
+        box-shadow: 0 0 4px 1px grey;    
         filter: grayscale(0);
     }
 
@@ -414,4 +415,12 @@ body{
     object-fit: cover;
     display: block;
 }
+}
+
+
+////////////////////CONTACT US ///////////////////////////////////////////
+
+.heading-primary{
+    font-size: 2.5rem;
+    text-align: center;
 }
