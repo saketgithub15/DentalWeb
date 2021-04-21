@@ -143,13 +143,47 @@ body {
   .image_1 {
     width: 100%; }
 
+
+.image_slide1{
+  background-image: url("../img/main_img1.jpeg");
+  background-size: 100% 100%;
+  object-fit: cover;
+}
+.image_slide2{
+  background-image: url("../img/main_img2.jpg");
+  background-size: 100% 100%;
+  
+}
+.image_slide3{
+  background-image: url("../img/main_img3.jpg");
+  background-size: 100% 100%;
+}
+.image_slide4{
+  background-image: url("../img/main_img4.jpg");
+  background-size: 100% 100%;
+  object-fit: cover;
+}
+
+
 @keyframes slider {
-  0% {
-    background-image: url("../img/main_img1.jpeg"); }
-  42% {
-    background-image: url("../img/main_img2.jpeg"); }
-  84% {
-    background-image: url("../img/main_img3.jpeg"); } }
+    0%{background-image: url('../img/main_img1.jpeg');}
+    50%{background-image: url('../img/main_img2.jpg');}
+    80%{background-image: url('../img/main_img3.jpg');}
+    120%{background-image: url('../img/main_img4.jpg');}}
+
+
+    .swiper-container{
+      background-size: 100% 100%;
+      width: 80%;
+      height: 70rem;  
+      
+    }
+    .swiper-slide{
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
 .team {
   font-size: 1.4rem;
@@ -231,6 +265,8 @@ body {
   cursor: pointer;
   transition: 0.5s;
   border-radius: 0.5rem; }
+  .service a {
+    color: #fff; }
 
 .service:hover {
   transform: translateY(-0.5rem); }

@@ -6,7 +6,7 @@
   "scripts": {
     "compile:sass": "node-sass ./public/sass/main.scss ./public/css/style.css -w",
     "start": "node src/app.js",
-    "dev": "env-cmd ./config/dev.env nodemon src/app.js"
+    "dev": "env-cmd ./config/dev.env nodemon src/app.js  -e js,hbs"
   },
   "author": "",
   "license": "ISC",

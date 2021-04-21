@@ -11,7 +11,6 @@ $bp-large: 62.5em; //1000px
 $bp-medium: 50em; //800px
 $bp-small: 37.5em; //600px
 
-
 *,
 *::before,
 *::after{
@@ -19,6 +18,12 @@ $bp-small: 37.5em; //600px
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
+
+
+
  html{
      font-size: 62.5%;
     //  height: 100%;
@@ -26,6 +31,8 @@ $bp-small: 37.5em; //600px
          font-size: 50%;
      }
  }
+
+
 
 body{
     font-family: $font-primary;
@@ -35,6 +42,8 @@ body{
     flex-direction: column;
     height: 100vh;
 }
+
+
 
 .welcome_note{
     text-align: center;
@@ -58,6 +67,7 @@ body{
         padding: 1rem;
     }
   
+
 
     &_icon{
         height: 3rem;
@@ -224,8 +234,9 @@ body{
 
 @keyframes slider {
     0%{background-image: url('../img/main_img1.jpeg');}
-    42%{background-image: url('../img/main_img2.jpeg');}
-    84%{background-image: url('../img/main_img3.jpeg');}
+    33%{background-image: url('../img/main_img2.jpg');}
+    66%{background-image: url('../img/main_img3.jpg');}
+    100%{background-image: url('../img/main_img3.jpg');}
 }
 
 .team{
@@ -341,7 +352,12 @@ body{
     cursor: pointer;
     transition: 0.5s;
     border-radius: 0.5rem;
+
+    a{
+        color: #fff;
+    }
 }
+
 
 .service:hover{
     transform: translateY(-0.5rem);

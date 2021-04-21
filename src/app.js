@@ -4,7 +4,7 @@ const path  = require('path');
 const hbs = require('hbs');
 require('./db/conn');
 const UserData = require('./model/userdata');
-
+const serviceRouter = require('./router/router')
 
 const port = process.env.PORT;
 
@@ -18,6 +18,7 @@ app.set('view engine', 'hbs');
 app.set('views', templatePath);
 app.use(express.json());
 app.use(express.urlencoded({extended: false}))
+app.use(serviceRouter)
 
 hbs.registerPartials(partialsPath);
 
@@ -62,9 +63,9 @@ try{
 
 })
 
-app.get('/services/orthodontics', (req, res)=>{
-    res.render('services/orthodontics');
-})
+// app.get('/services/orthodontics', (req, res)=>{
+//     res.render('services/orthodontics');
+// })
 
 app.listen(port, ()=>{
     console.log(`listining on the ${port}`)
