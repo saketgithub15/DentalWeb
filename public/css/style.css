@@ -146,8 +146,7 @@ body {
 
 .image_slide1{
   background-image: url("../img/main_img1.jpeg");
-  background-size: 100% 100%;
-  object-fit: cover;
+  background-size: cover;
 }
 .image_slide2{
   background-image: url("../img/main_img2.jpg");
@@ -161,7 +160,6 @@ body {
 .image_slide4{
   background-image: url("../img/main_img4.jpg");
   background-size: 100% 100%;
-  object-fit: cover;
 }
 
 
